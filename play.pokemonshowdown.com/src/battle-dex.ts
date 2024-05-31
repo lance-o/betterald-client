@@ -180,7 +180,7 @@ const Dex = new class implements ModdedDex {
 	pokeballs: string[] | null = null;
 
 	//TODO we might want to move this to something like data/petmods
-	readonly modResourcePrefix = 'https://raw.githubusercontent.com/scoopapa/dh2/master/data/mods/';
+	readonly modResourcePrefix = 'https://raw.githubusercontent.com/lance-o/betterald/main/data/mods/';
 
 
 	resourcePrefix = (() => {
@@ -983,6 +983,8 @@ class ModdedDex {
 						break;
 					case 'gen2crystalseviiislands':
 						data.category = Dex.getCSICategory(data.type);	
+						break;
+					case 'betterald2':
 						break;
 					default: 
 						data.category = Dex.getGen3Category(data.type);
